@@ -1,0 +1,516 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      The target system is: PICO -  - cortex-m33
+      The host system is: Darwin - 22.4.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /Users/aidanworkman/Documents/433/build/CMakeFiles/4.0.0/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /opt/homebrew/bin/arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/homebrew/bin/arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /Users/aidanworkman/Documents/433/build/CMakeFiles/4.0.0/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1230 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 14.2.1 20241119
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-REHJgr"
+      binary: "/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-REHJgr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/aidanworkman/.pico-sdk/sdk/2.1.1/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-REHJgr'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_85590
+        [1/2] /opt/homebrew/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu11   -v -o CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
+        Target: arm-none-eabi
+        Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -auxbase-strip CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o -std=gnu11 -version -o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cceXEaAo.s
+        GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 733728c033f099ebc66962b91852e3eb
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cceXEaAo.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+        [2/2] : && /opt/homebrew/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl,--build-id=none -nostdlib -v CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o -o cmTC_85590.elf   && :
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
+        COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper
+        Target: arm-none-eabi
+        Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_85590.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2 -plugin /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//ccsqAZK5.res --sysroot=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -X -o cmTC_85590.elf -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1 -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o
+        /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_85590.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include]
+        implicit include dirs: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include-fixed;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-REHJgr']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_85590]
+        ignore line: [[1/2] /opt/homebrew/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu11   -v -o CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -auxbase-strip CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o -std=gnu11 -version -o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cceXEaAo.s]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 733728c033f099ebc66962b91852e3eb]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cceXEaAo.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: [[2/2] : && /opt/homebrew/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl --build-id=none -nostdlib -v CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o -o cmTC_85590.elf   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_85590.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        link line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2 -plugin /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//ccsqAZK5.res --sysroot=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -X -o cmTC_85590.elf -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1 -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o]
+          arg [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//ccsqAZK5.res] ==> ignore
+          arg [--sysroot=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi] ==> ignore
+          arg [-X] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_85590.elf] ==> ignore
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib]
+          arg [--build-id=none] ==> ignore
+          arg [CMakeFiles/cmTC_85590.dir/CMakeCCompilerABI.c.o] ==> ignore
+        ignore line: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
+        ignore line: [ defaulting to 0000000000008000]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_85590.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: []
+        ignore line: []
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-bJrJIk"
+      binary: "/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-bJrJIk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
+      CMAKE_CXX_FLAGS_DEBUG: "-Og -g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/aidanworkman/.pico-sdk/sdk/2.1.1/cmake"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-bJrJIk'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_fd248
+        [1/2] /opt/homebrew/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu++17   -v -o CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++
+        Target: arm-none-eabi
+        Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu++17' '-v' '-o' 'CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -auxbase-strip CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o -std=gnu++17 -version -o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cc32KYnw.s
+        GNU C++17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp"
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C++17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: aef279e1140f94be80a6badcc599c728
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu++17' '-v' '-o' 'CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cc32KYnw.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu++17' '-v' '-o' 'CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+        [2/2] : && /opt/homebrew/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl,--build-id=none -nostdlib -v CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fd248.elf   && :
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++
+        COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper
+        Target: arm-none-eabi
+        Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fd248.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2 -plugin /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//ccdj93RG.res --sysroot=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -X -o cmTC_fd248.elf -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1 -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fd248.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp]
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1]
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp]
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/backward]
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include]
+        implicit include dirs: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/backward;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include-fixed;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/aidanworkman/Documents/433/build/CMakeFiles/CMakeScratch/TryCompile-bJrJIk']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_fd248]
+        ignore line: [[1/2] /opt/homebrew/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu++17   -v -o CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu++17' '-v' '-o' 'CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -auxbase-strip CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o -std=gnu++17 -version -o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cc32KYnw.s]
+        ignore line: [GNU C++17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v8-m.main+fp/softfp]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: aef279e1140f94be80a6badcc599c728]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu++17' '-v' '-o' 'CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o /var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//cc32KYnw.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-std=gnu++17' '-v' '-o' 'CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: [[2/2] : && /opt/homebrew/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl --build-id=none -nostdlib -v CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fd248.elf   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native --libexecdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/lib --infodir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-10-pipeline-338_20211018_1634516195/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fd248.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        link line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2 -plugin /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin.so -plugin-opt=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//ccdj93RG.res --sysroot=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -X -o cmTC_fd248.elf -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1 -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o]
+          arg [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/78/b6nxq1zx66q6zx_l_1yxcw3c0000gn/T//ccdj93RG.res] ==> ignore
+          arg [--sysroot=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi] ==> ignore
+          arg [-X] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_fd248.elf] ==> ignore
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib]
+          arg [-L/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib] ==> dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib]
+          arg [--build-id=none] ==> ignore
+          arg [CMakeFiles/cmTC_fd248.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+        ignore line: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
+        ignore line: [ defaulting to 0000000000008000]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fd248.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp']
+        ignore line: []
+        ignore line: []
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib]
+        collapse library dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/softfp;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc;/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/lib]
+        implicit fwks: []
+      
+      
+...
