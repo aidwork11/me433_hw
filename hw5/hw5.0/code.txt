@@ -1,0 +1,182 @@
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/spi.h"
+#include <math.h>
+
+
+#define CS_PIN_0 17
+#define SCK_PIN_0 18
+#define SPI_TX_PIN_0 19
+
+#define SPI_RX_PIN_1 12
+#define CS_PIN_1 13
+#define SCK_PIN_1 14
+#define SPI_TX_PIN_1 15
+
+#define RAM_READ 0x03
+#define RAM_WRITE 0x02
+
+
+
+static inline void cs_toggle(bool value, uint cs_pin) {
+    asm volatile("nop \n nop \n nop");
+    gpio_put(cs_pin, value);
+    asm volatile("nop \n nop \n nop");
+}
+
+void prepare_triangle_data(uint16_t data_value, uint8_t data[2]) {
+    data_value &= 0x3FF;
+    uint8_t control_byte = 0;
+    control_byte |= (1 << 4); 
+    control_byte |= ((data_value >> 8) & 0x03);
+    uint8_t data_byte = data_value & 0xFF;
+    uint16_t data_output = control_byte << 8 | data_byte;
+    printf("control_byte: %d, data_byte: %d\n", control_byte, data_byte);
+
+    // Fill the output array
+    data[0] = control_byte;
+    data[1] = data_byte;
+}
+
+
+void read_from_RAM(uint8_t* from_data, uint16_t address) {
+
+    uint8_t address_high = (address >> 8) & 0xFF;
+    uint8_t address_low = address & 0xFF;
+    uint8_t command[3] = {RAM_READ, address_high, address_low};
+
+    cs_toggle(false, CS_PIN_1);
+    spi_write_blocking(spi1, command, 3);
+    spi_read_blocking(spi1, 0xFF, from_data, 1);
+    cs_toggle(true, CS_PIN_1);
+
+    sleep_ms(1);
+}
+
+bool write_to_RAM(uint8_t to_data, uint16_t address) {
+    uint8_t address_high = (address >> 8) & 0xFF;
+    uint8_t address_low = address & 0xFF;
+    uint8_t command[4] = {RAM_WRITE, address_high, address_low, to_data};
+
+    printf("Writing to RAM - Address: 0x%04X, Data: 0x%02X\n", address, to_data);
+    printf("Command: 0x%02X 0x%02X 0x%02X 0x%02X\n", 
+           command[0], command[1], command[2], command[3]);
+
+    cs_toggle(false, CS_PIN_1);
+    spi_write_blocking(spi1, command, 4);
+    cs_toggle(true, CS_PIN_1);
+
+    sleep_ms(1);
+
+    uint8_t read_data;
+    read_from_RAM(&read_data, address);
+    return read_data == to_data;
+}
+
+void set_RAM_to_byte_mode() {
+    uint8_t command[2] = {0x01, 0x00};
+    cs_toggle(false, CS_PIN_1);
+    spi_write_blocking(spi1, command, 2);
+    cs_toggle(true, CS_PIN_1);
+}
+
+uint8_t read_RAM_status() {
+    uint8_t status;
+    uint8_t command = 0x05; 
+    
+    cs_toggle(false, CS_PIN_1);
+    spi_write_blocking(spi1, &command, 1);
+    spi_read_blocking(spi1, 0xFF, &status, 1);
+    cs_toggle(true, CS_PIN_1);
+    
+    return status;
+
+}
+
+
+
+int main()
+{
+
+    // so much set up
+    stdio_init_all();
+    gpio_init(CS_PIN_0);
+    gpio_init(CS_PIN_1);
+    gpio_set_dir(CS_PIN_0, GPIO_OUT);
+    gpio_set_dir(CS_PIN_1, GPIO_OUT);
+    spi_init(spi1, 100000); // the baud, or bits per second
+    spi_init(spi0, 100000);
+    gpio_set_function(SCK_PIN_0, GPIO_FUNC_SPI);
+    gpio_set_function(SPI_TX_PIN_0, GPIO_FUNC_SPI);
+    gpio_set_function(SCK_PIN_1, GPIO_FUNC_SPI);
+    gpio_set_function(SPI_TX_PIN_1, GPIO_FUNC_SPI);
+    gpio_set_function(SPI_RX_PIN_1, GPIO_FUNC_SPI);
+
+    set_RAM_to_byte_mode();
+
+    // wait for terminal to connect
+    while (!stdio_usb_connected()) {
+        printf("Waiting for USB connection...\n");
+        sleep_ms(1000);
+    }
+
+    while (read_RAM_status() != 0x00) {
+        printf("RAM is not ready\n");
+        sleep_ms(1000);
+    }
+
+    // get two floats from user
+    volatile float f1, f2;
+    printf("Enter two floats to use:");
+    scanf("%f %f", &f1, &f2);
+    printf("\nf1: %f, f2: %f\n", f1, f2);
+
+    // do the math 1000 times
+    uint32_t start_time = time_us_32();
+    volatile float f_add, f_sub, f_mult, f_div;
+    for (int i = 0; i < 1000; i++) {
+        f_add = f1+f2;
+        f_sub = f1-f2;
+        f_mult = f1*f2;
+        f_div = f1/f2;
+    }
+    uint32_t end_time = time_us_32();
+    
+    printf("\nResults: \n%f+%f=%f \n%f-%f=%f \n%f*%f=%f \n%f/%f=%f\n", f1,f2,f_add, f1,f2,f_sub, f1,f2,f_mult, f1,f2,f_div);
+    printf("Time taken: %d us. Average time per operation: %f us\n", end_time - start_time, (end_time - start_time) / 1000.0f);
+
+    uint8_t data_to_RAM[2];
+    uint8_t data_from_RAM;
+    uint8_t data_to_DAC[2];
+    
+    bool success;
+    for (int i = 0; i < 1024; i++) {
+        success = write_to_RAM((uint8_t)i, (uint16_t)i);
+        printf("write_to_RAM[%d]: %d\n", i, success);
+        sleep_ms(1000);
+    }
+
+
+    for (int i = 0; i < 1024; i++) {
+        read_from_RAM(&data_from_RAM, (uint16_t)i);
+        printf("data_from_RAM: %d\n", data_from_RAM);
+        sleep_ms(500);
+    }
+
+    while (true) {
+        printf("Hello, world!\n");
+      /*  for (int i = 0; i < 1024; i++) {
+            //prepare_triangle_data(i, data_to_RAM);
+            uint8_t input_data = (uint8_t)i;
+            write_to_RAM(input_data, i);
+            read_from_R
+        AM(&data_from_RAM, i);
+
+            printf("data_to_RAM: %d\n", input_data);
+            printf("data_from_RAM: %d\n", data_from_RAM);
+
+
+            sleep_ms(1000);
+        } */
+    }
+}
