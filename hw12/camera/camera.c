@@ -126,7 +126,6 @@ int main()
     while (!stdio_usb_connected()) {
         sleep_ms(100);
     }
-    printf("Hello, camera!\n");
 
     init_camera_pins();
  
@@ -185,9 +184,7 @@ void init_camera_pins(){
     gpio_pull_up(I2C_SDA);
     gpio_pull_up(I2C_SCL);
     
-    printf("Start init camera\n");
     init_camera();
-    printf("End init camera\n");
 
     // interrupts
     gpio_init(VS); // vertical sync
@@ -306,10 +303,10 @@ void init_camera(){
     sleep_ms(300);
 
     uint8_t p = OV7670_read_register(OV7670_REG_PID);
-    printf("pid = %d\n",p);
+
 
     uint8_t v = OV7670_read_register(OV7670_REG_VER);
-    printf("pid = %d\n",v);
+
 }
 
 // Selects one of the camera's test patterns (or disable).

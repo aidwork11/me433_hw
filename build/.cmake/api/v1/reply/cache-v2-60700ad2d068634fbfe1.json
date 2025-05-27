@@ -231,7 +231,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -1323,7 +1323,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "DOXYGEN_DOT_EXECUTABLE-NOTFOUND"
+			"value" : "/opt/homebrew/bin/dot"
 		},
 		{
 			"name" : "DOXYGEN_EXECUTABLE",
@@ -1339,7 +1339,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
+			"value" : "/opt/homebrew/bin/doxygen"
 		},
 		{
 			"name" : "FAMILY_MCUS",
@@ -1411,7 +1411,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/opt/homebrew/Frameworks/Python.framework/Versions/3.13/bin/python3.13][found components: Interpreter ][v3.13.2()]"
+			"value" : "[/opt/homebrew/Frameworks/Python.framework/Versions/3.13/bin/python3.13][found components: Interpreter ][v3.13.3()]"
 		},
 		{
 			"name" : "PICO_32BIT",
@@ -1987,7 +1987,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Python;3;13;2;32;64;;;abi3;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/opt/homebrew/lib/python3.13/site-packages;/opt/homebrew/lib/python3.13/site-packages"
+			"value" : "Python;3;13;3;32;64;;;abi3;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/opt/homebrew/lib/python3.13/site-packages;/opt/homebrew/lib/python3.13/site-packages"
 		},
 		{
 			"name" : "_Python3_INTERPRETER_SIGNATURE",

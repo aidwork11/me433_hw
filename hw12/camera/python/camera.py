@@ -22,12 +22,13 @@ def draw():
     
     for t in range(4800):
         dat_str = ser.read_until(b'\n')
-        i, r, g, b = list(map(int, dat_str.split()))  # Changed to match C code output
+        i, r, g, b = list(map(int, dat_str.split()))
         row = i//80
         col = i%80
-        reds[row][col] = int(b * 255 / 31)
-        greens[row][col] = int(g * 255 / 31)
-        blues[row][col] = int(r * 255 / 31)
+        # Clamp values to 0-255 range
+        reds[row][col] = min(255, int(r * 255 / 31))
+        greens[row][col] = min(255, int(g * 255 / 31))
+        blues[row][col] = min(255, int(b * 255 / 31))
     print(i)
     print(row)
     print(col)
